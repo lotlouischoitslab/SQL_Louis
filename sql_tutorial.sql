@@ -28,3 +28,28 @@ VALUES ('BTS'), ('IVE') , ('ITZY');
 
 #Query all the data
 SELECT * FROM bands; #select every column
+
+SELECT *FROM bands LIMIT 2; #limit to 2 bands
+
+SELECT name FROM bands; #only get the name columns
+
+SELECT id AS 'ID', name AS 'Band Name'
+FROM bands;
+
+SELECT * FROM bands ORDER BY name; #alphabetical name
+# SELECT * FROM bands ORDER BY name DESC; #reverse alphabetical
+
+-- Band ID Information
+-- id 1: AESPA
+-- id 2: BTS
+-- id 3: IVE
+-- id 4: ITZY
+
+INSERT INTO albums (name,release_year, band_id)
+VALUES('Savage',2021,1), #id 1 for AESPA
+	 ('Girls',2022,1), #id 1 for AESPA
+     ('BE',2020,2), #id 2 for BTS
+     ('ROYAL',3,2022), #id 3 for IVE
+     ('NotShy',4,2020); #id 4 for ITZY
+     
+SELECT * FROM albums;
