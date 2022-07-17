@@ -1,16 +1,9 @@
-CREATE TABLE sales_order (
-cust_id INT UNSIGNED NOT NULL,
-sales_person_id INT UNSIGNED NOT NULL,
-FOREIGN KEY (cust_id)
-REFERENCES customer(id), 
-FOREIGN KEY (sales_person_id)
-REFERENCES sales_person(id), 
-time_order_taken TIMESTAMP NOT NULL,
-purchase_order_number INT NOT NULL,
-credit_card_number VARCHAR(16) NOT NULL,
-credit_card_exper_month TINYINT NOT NULL,
-credit_card_exper_year TINYINT NOT NULL,
-credit_card_secret_code TINYINT NOT NULL,
-name_on_card VARCHAR(60) NOT NULL,
-id INT UNSIGNED NOT NULL
-AUTO_INCREMENT PRIMARY KEY);
+#CREATE DATABASE test; #create database
+#DROP DATABASE test; #drop the database
+
+CREATE DATABASE record_company; #create record company
+USE record_company; #use that database
+#We are going to create a table variable
+CREATE TABLE test (
+	test_column INT
+); 
